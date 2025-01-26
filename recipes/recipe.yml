@@ -26,6 +26,7 @@ modules:
         - org.darktable.Darktable
         - org.gimp.GIMP
         - org.inkscape.Inkscape
+        - org.kde.digikam
         - org.kde.gwenview
         - org.kde.kcalc
         - org.kde.kdenlive
@@ -46,6 +47,7 @@ modules:
       - fastfetch
       - gamescope
       - kmod-openrazer
+      - plasma-workspace-x11
       - steam
       - unrar
     remove:
