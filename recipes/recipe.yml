@@ -15,7 +15,6 @@ modules:
       install:
         - app.polychromatic.controller
         - com.github.Matoking.protontricks
-        - com.heroicgameslauncher.hgl
         - com.rustdesk.RustDesk
         - com.steamgriddb.SGDBoop
         - com.stremio.Stremio
@@ -50,6 +49,7 @@ modules:
       - plasma-workspace-x11
       - steam
       - unrar
+      - wine
     remove:
       - firefox
       - firefox-langpacks
