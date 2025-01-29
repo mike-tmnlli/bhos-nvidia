@@ -3,7 +3,7 @@
 name: BHOS-NVIDIA
 description: BlueHatOS w/ NVIDIA support
 base-image: ghcr.io/ublue-os/kinoite-nvidia
-image-version: 41
+image-version: latest
 
 modules:
   - type: default-flatpaks
