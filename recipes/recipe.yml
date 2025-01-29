@@ -1,9 +1,9 @@
 ---
 # yaml-language-server: $schema=https://schema.blue-build.org/recipe-v1.json
-name: BHOS-NVIDIA
+name: bhos-nvidia
 description: BlueHatOS w/ NVIDIA support
 base-image: ghcr.io/ublue-os/kinoite-nvidia
-image-version: latest
+image-version: 41
 
 modules:
   - type: default-flatpaks
@@ -14,7 +14,6 @@ modules:
       repo-title: "Flathub (System)"
       install:
         - app.polychromatic.controller
-        - com.github.Matoking.protontricks
         - com.rustdesk.RustDesk
         - com.steamgriddb.SGDBoop
         - com.stremio.Stremio
@@ -27,16 +26,16 @@ modules:
         - org.inkscape.Inkscape
         - org.kde.digikam
         - org.kde.gwenview
-        - org.kde.kcalc
         - org.kde.kdenlive
         - org.kde.krita
         - org.kde.okular
         - org.kde.skanpage
-        - org.onlyoffice.desktopeditors
+        - org.libreoffice.LibreOffice
 
   - type: rpm-ostree
     repos:
       - https://brave-browser-rpm-release.s3.brave.com/brave-browser.repo
+      - https://copr.fedorainfracloud.org/coprs/lizardbyte/stable/repo/%OS_VERSION%/lizardbyte-stable-%OS_VERSION%.repo
     keys:
       - https://brave-browser-rpm-release.s3.brave.com/brave-core.asc
     optfix:
@@ -46,10 +45,12 @@ modules:
       - fastfetch
       - gamescope
       - kmod-openrazer
+      - mangohud
       - plasma-workspace-x11
+      - protontricks
       - steam
+      - Sunshine
       - unrar
-      - wine
     remove:
       - firefox
       - firefox-langpacks
